@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class UserHomeActivity extends AppCompatActivity {
     private static final String TAG = "UserHomeActivity"; // Added TAG constant
 
-    Button medicalhistory, profile, logout, addhealth, currentdisease, healthcard;
+    Button medicalhistory, profile, logout, addhealth, currentdisease, healthcard, healthInsurance;
     String mobile;
     private long pressedTime;
     TextView tv1;
@@ -35,6 +35,7 @@ public class UserHomeActivity extends AppCompatActivity {
         addhealth = (Button) findViewById(R.id.btn_addhealthissue);
         currentdisease = (Button) findViewById(R.id.btn_currentdisease);
         healthcard = (Button) findViewById(R.id.btn_healthcard);
+        healthInsurance = (Button) findViewById(R.id.btn_healthInsurance);
         tv1 = (TextView) findViewById(R.id.txt_id);
 
         try {
@@ -53,6 +54,7 @@ public class UserHomeActivity extends AppCompatActivity {
         }
 
         Medicalid = tv1.getText().toString();
+        HealthInsuranceManager.getOrCreateDocument(this, Medicalid);
 
         medicalhistory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +78,16 @@ public class UserHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(UserHomeActivity.this, HelathCard.class);
+                i.putExtra("MedicalID", Medicalid);
+                startActivity(i);
+            }
+        });
+
+
+        healthInsurance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(UserHomeActivity.this, HealthInsuranceActivity.class);
                 i.putExtra("MedicalID", Medicalid);
                 startActivity(i);
             }
