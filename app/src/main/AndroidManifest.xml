@@ -27,6 +27,18 @@
         android:supportsRtl="true"
          >
 
+        <activity
+            android:name=".PredictionHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PredictionResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnterSymptomsActivity"
+            android:exported="false" />
          <activity
             android:name=".ViewUserdetails"
             android:exported="false" />

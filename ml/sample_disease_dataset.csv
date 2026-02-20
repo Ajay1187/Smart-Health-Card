@@ -1,0 +1,16 @@
+fever,cough,headache,fatigue,vomiting,chest_pain,sore_throat,body_pain,nausea,breathlessness,severity,duration_days,disease
+1,1,0,1,0,0,1,1,0,0,0.66,5,Flu
+1,0,1,1,1,0,0,1,1,0,1.0,4,Dengue
+0,1,0,1,0,1,0,0,0,1,0.66,6,Bronchitis
+1,0,1,0,1,0,0,0,1,0,0.66,2,Food Poisoning
+0,0,1,1,0,0,0,1,0,0,0.33,3,Migraine
+1,1,1,1,0,0,1,1,0,0,1.0,7,Flu
+1,0,0,1,1,0,0,1,1,0,1.0,5,Dengue
+0,1,0,1,0,1,0,0,0,1,1.0,8,Bronchitis
+1,0,1,0,1,0,0,0,1,0,0.66,3,Food Poisoning
+0,0,1,1,0,0,0,1,0,0,0.33,2,Migraine
+1,1,0,1,0,0,1,1,0,0,0.66,6,Flu
+1,0,0,1,1,0,0,1,1,0,1.0,6,Dengue
+0,1,0,1,0,1,0,0,0,1,0.66,7,Bronchitis
+1,0,1,0,1,0,0,0,1,0,0.66,4,Food Poisoning
+0,0,1,1,0,0,0,1,0,0,0.33,1,Migraine
