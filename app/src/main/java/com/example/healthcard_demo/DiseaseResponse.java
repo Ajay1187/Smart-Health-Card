@@ -1,14 +1,39 @@
 package com.example.healthcard_demo;
 
+import com.google.gson.annotations.SerializedName;
+
 public class DiseaseResponse {
 
-    private String predicted_disease;
+    @SerializedName(value = "predictedDisease", alternate = {"predicted_disease", "disease"})
+    private String predictedDisease;
 
-    public String getPredicted_disease() {
-        return predicted_disease;
+    @SerializedName(value = "confidence", alternate = {"confidence_score", "score"})
+    private float confidence;
+
+    @SerializedName(value = "severity", alternate = {"severity_level", "risk"})
+    private String severity;
+
+    public String getPredictedDisease() {
+        return predictedDisease;
     }
 
-    public void setPredicted_disease(String predicted_disease) {
-        this.predicted_disease = predicted_disease;
+    public void setPredictedDisease(String predictedDisease) {
+        this.predictedDisease = predictedDisease;
+    }
+
+    public float getConfidence() {
+        return confidence;
+    }
+
+    public void setConfidence(float confidence) {
+        this.confidence = confidence;
+    }
+
+    public String getSeverity() {
+        return severity;
+    }
+
+    public void setSeverity(String severity) {
+        this.severity = severity;
     }
 }

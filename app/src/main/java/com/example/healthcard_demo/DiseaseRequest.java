@@ -4,17 +4,17 @@ import java.util.List;
 
 public class DiseaseRequest {
 
-    private List<Integer> symptoms;
+    private List<Float> features;
 
-    public DiseaseRequest(List<Integer> symptoms) {
-        this.symptoms = symptoms;
+    public DiseaseRequest(List<Float> features) {
+        this.features = features;
     }
 
-    public List<Integer> getSymptoms() {
-        return symptoms;
+    public List<Float> getFeatures() {
+        return features;
     }
 
-    public void setSymptoms(List<Integer> symptoms) {
-        this.symptoms = symptoms;
+    public void setFeatures(List<Float> features) {
+        this.features = features;
     }
 }

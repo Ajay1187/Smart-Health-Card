@@ -93,7 +93,7 @@ public class UserHomeActivity extends AppCompatActivity {
         currentdisease.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(UserHomeActivity.this, CurrentDisasesActivity.class);
+                Intent i = new Intent(UserHomeActivity.this, EnterSymptomsActivity.class);
                 i.putExtra("MedicalID", Medicalid);
                 startActivity(i);
             }
